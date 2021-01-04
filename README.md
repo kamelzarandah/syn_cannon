@@ -1,4 +1,5 @@
 # syn_cannon
+for more scripts join my discord https://discord.gg/sjSfqxjpUd
 ```
 commands :
  these commands only work for players with the job "army"
