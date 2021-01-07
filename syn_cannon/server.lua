@@ -22,10 +22,11 @@ end)
 
 RegisterCommand("cannon", function(source, args) --- example /rotate 20 (rotation number from 0 to 360)
   if args ~= nil then
-    if (#args[1]) == 1 or (#args[1]) == 2 then 
+    if tonumber(args[1]) == 1 or tonumber(args[1]) == 2 then 
       local _source = source
       local Character = VorpCore.getUser(_source).getUsedCharacter
-      local type = (#args[1])
+      local type = tonumber(args[1])
+      print(type)
       local job = "army"
       local job2 = Character.job
       if job == job2 then
