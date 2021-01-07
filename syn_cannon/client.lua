@@ -2,6 +2,10 @@ local car
 
 RegisterNetEvent('syn_cannon:spawncannon')
 AddEventHandler('syn_cannon:spawncannon', function(type)
+    if car ~= nil then 
+        DeleteVehicle(car)
+    end
+
     if type == 1 then 
         local ped = PlayerPedId()
         local car_start = GetEntityCoords(ped)
